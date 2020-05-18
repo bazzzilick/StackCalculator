@@ -1,0 +1,68 @@
+18-05-2020 03:46:18 TRACE CalculatorProject:? - read commands from System.in
+18-05-2020 03:46:18 TRACE CommandFactory:? - file with classes was open successful
+18-05-2020 03:47:28 TRACE Calculator:? - command name : DEFINE
+18-05-2020 03:47:42 TRACE Calculator:? - command name : PUSH
+18-05-2020 03:47:48 TRACE Calculator:? - command name : SQRT
+18-05-2020 03:47:52 TRACE Calculator:? - command name : PRINT
+18-05-2020 03:47:57 TRACE Calculator:? - command name : EXIT
+18-05-2020 04:05:34 TRACE CalculatorProject:? - read commands from System.in
+18-05-2020 04:05:34 TRACE CommandFactory:? - file with classes was open successful
+18-05-2020 04:05:46 TRACE Calculator:? - command name : PUSH
+18-05-2020 04:05:46 ERROR Calculator:36 - can't do operation : 
+Exceptions.ArgumentsCountException: wrong count of arguments in push command
+	at Commands.PushCommand.doCommand(PushCommand.java:14)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+18-05-2020 04:05:59 TRACE Calculator:? - command name : PUSH
+18-05-2020 04:05:59 ERROR Calculator:36 - can't do operation : 
+Exceptions.ArgumentTypeException: wrong type of argument in push command
+	at Commands.PushCommand.doCommand(PushCommand.java:30)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+18-05-2020 04:06:08 TRACE Calculator:? - command name : PUSH
+18-05-2020 04:06:12 TRACE Calculator:? - command name : SQRT
+18-05-2020 04:06:19 TRACE Calculator:? - command name : PRINT
+18-05-2020 04:06:22 TRACE Calculator:? - command name : POP
+18-05-2020 04:06:24 TRACE Calculator:? - command name : PRINT
+18-05-2020 04:06:24 ERROR Calculator:41 - can't do operation : 
+java.util.EmptyStackException
+	at java.util.Stack.peek(Stack.java:102)
+	at Commands.PrintCommand.doCommand(PrintCommand.java:16)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+18-05-2020 04:06:30 TRACE Calculator:? - command name : EXIT
+18-05-2020 04:11:55 TRACE CalculatorProject:32 - read commands from System.in
+18-05-2020 04:11:55 TRACE CommandFactory:35 - file with classes was open successful
+18-05-2020 04:12:27 TRACE Calculator:59 - command name : DEFINE
+18-05-2020 04:12:31 TRACE Calculator:59 - command name : PUSH
+18-05-2020 04:12:31 ERROR Calculator:36 - can't do operation : 
+Exceptions.ArgumentsCountException: wrong count of arguments in push command
+	at Commands.PushCommand.doCommand(PushCommand.java:14)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+18-05-2020 04:12:37 TRACE Calculator:59 - command name : PUSH
+18-05-2020 04:12:37 ERROR Calculator:36 - can't do operation : 
+Exceptions.ArgumentTypeException: wrong type of argument in push command
+	at Commands.PushCommand.doCommand(PushCommand.java:30)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+18-05-2020 04:12:41 TRACE Calculator:59 - command name : PUSH
+18-05-2020 04:12:45 TRACE Calculator:59 - command name : SQRT
+18-05-2020 04:12:46 TRACE Calculator:59 - command name : PRINT
+18-05-2020 04:12:51 TRACE Calculator:59 - command name : EXIT
+18-05-2020 07:12:50 TRACE CommandFactory:35 - file with classes was open successful
+18-05-2020 07:25:41 TRACE CommandFactory:35 - file with classes was open successful
+18-05-2020 07:41:19 TRACE CommandFactory:35 - file with classes was open successful
+18-05-2020 07:41:19 TRACE CommandFactory:35 - file with classes was open successful
+18-05-2020 07:41:19 TRACE CommandFactory:35 - file with classes was open successful
+18-05-2020 07:41:19 TRACE CommandFactory:35 - file with classes was open successful
+18-05-2020 07:41:19 TRACE CommandFactory:35 - file with classes was open successful
+18-05-2020 07:41:19 TRACE CommandFactory:35 - file with classes was open successful
+18-05-2020 07:41:19 TRACE CommandFactory:35 - file with classes was open successful
+18-05-2020 07:41:19 TRACE CommandFactory:35 - file with classes was open successful
+18-05-2020 07:41:19 TRACE CommandFactory:35 - file with classes was open successful
