@@ -4,6 +4,8 @@ import Exceptions.ArgumentsCountException;
 import Exceptions.BadResultException;
 import Exceptions.CalculatorException;
 
+import java.util.EmptyStackException;
+
 public class MultiplyCommand extends Command
 {
     @Override
@@ -12,6 +14,10 @@ public class MultiplyCommand extends Command
         if (args.length != 1)
         {
             throw new ArgumentsCountException("wrong count of arguments in multiply command");
+        }
+
+        if (context.size() < 2) {
+            throw new EmptyStackException();
         }
 
         Double firstOperand = context.pop();

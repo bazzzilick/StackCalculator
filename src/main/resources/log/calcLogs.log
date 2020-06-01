@@ -625,3 +625,103 @@ Exceptions.UnknownCommandException: Unknown command
 	at Calculator.doOperation(Calculator.java:66)
 	at Calculator.startCalculate(Calculator.java:32)
 	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:43:09 TRACE CalculatorProject:32 - read commands from System.in
+01-06-2020 11:43:09 TRACE CommandFactory:35 - file with classes was open successful
+01-06-2020 11:43:18 TRACE Calculator:59 - command name : define
+01-06-2020 11:43:28 TRACE Calculator:59 - command name : push
+01-06-2020 11:43:38 TRACE Calculator:59 - command name : print
+01-06-2020 11:43:42 TRACE Calculator:59 - command name : +
+01-06-2020 11:43:42 ERROR Calculator:41 - can't do operation : 
+java.util.EmptyStackException
+	at java.util.Stack.peek(Stack.java:102)
+	at java.util.Stack.pop(Stack.java:84)
+	at Commands.SumCommand.doCommand(SumCommand.java:17)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:43:48 TRACE Calculator:59 - command name : print
+01-06-2020 11:43:48 ERROR Calculator:41 - can't do operation : 
+java.util.EmptyStackException
+	at java.util.Stack.peek(Stack.java:102)
+	at Commands.PrintCommand.doCommand(PrintCommand.java:16)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 12:07:39 TRACE CalculatorProject:32 - read commands from System.in
+01-06-2020 12:07:39 TRACE CommandFactory:35 - file with classes was open successful
+01-06-2020 12:08:06 TRACE Calculator:59 - command name : define
+01-06-2020 12:08:14 TRACE Calculator:59 - command name : push
+01-06-2020 12:08:19 TRACE Calculator:59 - command name : print
+01-06-2020 12:08:24 TRACE Calculator:59 - command name : +
+01-06-2020 12:08:24 ERROR Calculator:41 - can't do operation : 
+java.util.EmptyStackException
+	at Commands.SumCommand.doCommand(SumCommand.java:35)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 12:08:29 TRACE Calculator:59 - command name : print
+01-06-2020 12:08:31 TRACE Calculator:59 - command name : print
+01-06-2020 12:08:37 TRACE Calculator:59 - command name : +
+01-06-2020 12:08:37 ERROR Calculator:41 - can't do operation : 
+java.util.EmptyStackException
+	at Commands.SumCommand.doCommand(SumCommand.java:35)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 12:08:40 TRACE Calculator:59 - command name : print
+01-06-2020 12:08:44 TRACE Calculator:59 - command name : exit
+01-06-2020 12:31:59 TRACE CalculatorProject:32 - read commands from System.in
+01-06-2020 12:31:59 TRACE CommandFactory:35 - file with classes was open successful
+01-06-2020 12:32:11 TRACE Calculator:59 - command name : define
+01-06-2020 12:32:16 TRACE Calculator:59 - command name : push
+01-06-2020 12:32:19 TRACE Calculator:59 - command name : print
+01-06-2020 12:32:22 TRACE Calculator:59 - command name : print
+01-06-2020 12:32:24 TRACE Calculator:59 - command name : +
+01-06-2020 12:32:24 ERROR Calculator:41 - can't do operation : 
+java.util.EmptyStackException
+	at Commands.SumCommand.doCommand(SumCommand.java:35)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 12:32:28 TRACE Calculator:59 - command name : print
+01-06-2020 12:32:34 TRACE Calculator:59 - command name : push
+01-06-2020 12:32:40 TRACE Calculator:59 - command name : print
+01-06-2020 12:32:42 TRACE Calculator:59 - command name : +
+01-06-2020 12:32:46 TRACE Calculator:59 - command name : +
+01-06-2020 12:32:46 ERROR Calculator:41 - can't do operation : 
+java.util.EmptyStackException
+	at Commands.SumCommand.doCommand(SumCommand.java:35)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 12:32:49 TRACE Calculator:59 - command name : print
+01-06-2020 12:32:52 TRACE Calculator:59 - command name : /
+01-06-2020 12:32:52 ERROR Calculator:41 - can't do operation : 
+java.util.EmptyStackException
+	at Commands.DivideCommand.doCommand(DivideCommand.java:21)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 12:32:55 TRACE Calculator:59 - command name : *
+01-06-2020 12:32:55 ERROR Calculator:41 - can't do operation : 
+java.util.EmptyStackException
+	at Commands.MultiplyCommand.doCommand(MultiplyCommand.java:20)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 12:32:57 TRACE Calculator:59 - command name : -
+01-06-2020 12:32:57 ERROR Calculator:41 - can't do operation : 
+java.util.EmptyStackException
+	at Commands.SubtractionCommand.doCommand(SubtractionCommand.java:19)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 12:33:00 TRACE Calculator:59 - command name : print
+01-06-2020 12:33:08 TRACE Calculator:59 - command name : +
+01-06-2020 12:33:08 ERROR Calculator:41 - can't do operation : 
+java.util.EmptyStackException
+	at Commands.SumCommand.doCommand(SumCommand.java:35)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 12:33:11 TRACE Calculator:59 - command name : exit

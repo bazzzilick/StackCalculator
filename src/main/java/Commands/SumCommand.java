@@ -4,6 +4,8 @@ import Exceptions.ArgumentsCountException;
 import Exceptions.BadResultException;
 import Exceptions.CalculatorException;
 
+import java.util.EmptyStackException;
+
 public class SumCommand extends Command
 {
     public void doCommand(String[] args,  Context context) throws CalculatorException
@@ -13,19 +15,24 @@ public class SumCommand extends Command
             throw new ArgumentsCountException("wrong count of arguments in sum command");
         }
 
-        Double firstOperand = context.pop();
-        Double secondOperand = context.pop();
+        if (context.size() > 1) {
 
-        double operationResult = firstOperand + secondOperand;
+            Double firstOperand = context.pop();
+            Double secondOperand = context.pop();
 
-        if (Double.isInfinite(operationResult) || Double.isNaN(operationResult))
-        {
-            context.push(secondOperand);
-            context.push(firstOperand);
+            double operationResult = firstOperand + secondOperand;
 
-            throw new BadResultException("Bad result in sum command");
+            if (Double.isInfinite(operationResult) || Double.isNaN(operationResult)) {
+                context.push(secondOperand);
+                context.push(firstOperand);
+
+                throw new BadResultException("Bad result in sum command");
+            }
+
+            context.push(operationResult);
         }
-
-        context.push(operationResult);
+        else{
+            throw new EmptyStackException();
+        }
     }
 }

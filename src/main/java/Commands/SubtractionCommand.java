@@ -4,6 +4,8 @@ import Exceptions.ArgumentsCountException;
 import Exceptions.BadResultException;
 import Exceptions.CalculatorException;
 
+import java.util.EmptyStackException;
+
 public class SubtractionCommand extends Command
 {
     public void doCommand(String[] args,  Context context) throws CalculatorException
@@ -11,6 +13,10 @@ public class SubtractionCommand extends Command
         if (args.length != 1)
         {
             throw new ArgumentsCountException("wrong count of arguments in subtraction command");
+        }
+
+        if (context.size() < 2) {
+            throw new EmptyStackException();
         }
 
         Double firstOperand = context.pop();

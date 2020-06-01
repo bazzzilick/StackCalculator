@@ -5,6 +5,8 @@ import Exceptions.BadResultException;
 import Exceptions.CalculatorException;
 import Exceptions.DivideByZeroException;
 
+import java.util.EmptyStackException;
+
 public class DivideCommand extends Command
 {
     @Override
@@ -15,10 +17,12 @@ public class DivideCommand extends Command
             throw new ArgumentsCountException("wrong argument count in divide command");
         }
 
-        Double firstOperand = context.pop();
+        if (context.size() < 2) {
+            throw new EmptyStackException();
+        }
 
-        if (firstOperand == 0)
-        {
+        Double firstOperand = context.pop();
+        if (firstOperand == 0) {
             context.push(firstOperand);
             throw new DivideByZeroException("divide by zero");
         }
