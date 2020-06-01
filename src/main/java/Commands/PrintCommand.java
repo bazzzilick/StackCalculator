@@ -15,7 +15,7 @@ public class PrintCommand extends Command
 
         System.out.println(context.peek());
     }
-    //TODO: for testing, must delete later
+
     public static double getValue(Context context)
     {
         return context.peek();

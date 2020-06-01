@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
 public class CalculatorTest {
 
     public Context context;
-    public CommandFactory commandFactory;
+    private CommandFactory commandFactory;
 
     public CalculatorTest()
     {
@@ -19,7 +19,7 @@ public class CalculatorTest {
     public void doOperation(String testingCommand) throws CalculatorException
     {
         String[] commandArgs = testingCommand.split(" ");
-        String commandName = commandArgs[0];
+        String commandName = commandArgs[0].toLowerCase();
 
         Command command = commandFactory.buildCommand(commandName);
         command.doCommand(commandArgs, context);

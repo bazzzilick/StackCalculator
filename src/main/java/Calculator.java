@@ -51,7 +51,7 @@ public class Calculator
     private void doOperation(String currentCommand) throws CalculatorException {
         String[] commandArgs = currentCommand.split(" ");
 
-        String commandName = commandArgs[0];
+        String commandName = commandArgs[0].toLowerCase();
         /*if (LOGGER.isTraceEnabled())
         {
             LOGGER.trace("command name : " + commandName);

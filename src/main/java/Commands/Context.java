@@ -16,7 +16,7 @@ public class Context extends Stack<Double>
     {
         return defines.containsKey(constantName);
     }
-    //TODO: for Test, delete later
+
     public Double getConstant(String constantName)
     {
         return defines.get(constantName);

@@ -14,7 +14,7 @@ public class PushCommandTest {
         CommandFactory commandFactory = new CommandFactory();
 
         String[] commandArgs = {"PUSH", "0"};
-        String commandName = commandArgs[0];
+        String commandName = commandArgs[0].toLowerCase();
 
         try
         {
