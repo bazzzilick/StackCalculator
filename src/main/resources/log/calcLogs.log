@@ -494,3 +494,134 @@ java.lang.NullPointerException
 01-06-2020 11:27:53 TRACE CommandFactory:35 - file with classes was open successful
 01-06-2020 11:27:53 TRACE CommandFactory:35 - file with classes was open successful
 01-06-2020 11:27:53 TRACE CommandFactory:35 - file with classes was open successful
+01-06-2020 11:34:45 TRACE CommandFactory:35 - file with classes was open successful
+01-06-2020 11:35:37 TRACE CalculatorProject:32 - read commands from System.in
+01-06-2020 11:35:37 TRACE CommandFactory:35 - file with classes was open successful
+01-06-2020 11:36:03 TRACE Calculator:59 - command name : define
+01-06-2020 11:36:08 TRACE Calculator:59 - command name : push
+01-06-2020 11:36:08 ERROR Calculator:36 - can't do operation : 
+Exceptions.ArgumentsCountException: wrong count of arguments in push command
+	at Commands.PushCommand.doCommand(PushCommand.java:14)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:36:17 TRACE Calculator:59 - command name : push
+01-06-2020 11:36:22 TRACE Calculator:59 - command name : pop
+01-06-2020 11:36:22 ERROR Calculator:36 - can't do operation : 
+Exceptions.ArgumentsCountException: wrong count of arguments in pop command
+	at Commands.PopCommand.doCommand(PopCommand.java:13)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:36:27 TRACE Calculator:59 - command name : pop
+01-06-2020 11:36:33 TRACE Calculator:59 - command name : print
+01-06-2020 11:36:33 ERROR Calculator:41 - can't do operation : 
+java.util.EmptyStackException
+	at java.util.Stack.peek(Stack.java:102)
+	at Commands.PrintCommand.doCommand(PrintCommand.java:16)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:36:59 TRACE Calculator:59 - command name : push
+01-06-2020 11:37:12 TRACE Calculator:59 - command name : push
+01-06-2020 11:37:13 TRACE Calculator:59 - command name : +
+01-06-2020 11:37:16 TRACE Calculator:59 - command name : print
+01-06-2020 11:37:27 TRACE Calculator:59 - command name : pop
+01-06-2020 11:37:29 TRACE Calculator:59 - command name : print
+01-06-2020 11:37:29 ERROR Calculator:41 - can't do operation : 
+java.util.EmptyStackException
+	at java.util.Stack.peek(Stack.java:102)
+	at Commands.PrintCommand.doCommand(PrintCommand.java:16)
+	at Calculator.doOperation(Calculator.java:67)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:37:38 TRACE Calculator:59 - command name : exit
+01-06-2020 11:37:38 ERROR CommandFactory:57 - try to do unknown command : 
+java.lang.NullPointerException
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at CommandFactory.buildCommand(CommandFactory.java:51)
+	at Calculator.doOperation(Calculator.java:66)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:37:38 ERROR Calculator:36 - can't do operation : 
+Exceptions.UnknownCommandException: Unknown command
+	at CommandFactory.buildCommand(CommandFactory.java:58)
+	at Calculator.doOperation(Calculator.java:66)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:37:41 TRACE Calculator:59 - command name : exit
+01-06-2020 11:37:41 ERROR CommandFactory:57 - try to do unknown command : 
+java.lang.NullPointerException
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at CommandFactory.buildCommand(CommandFactory.java:51)
+	at Calculator.doOperation(Calculator.java:66)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:37:41 ERROR Calculator:36 - can't do operation : 
+Exceptions.UnknownCommandException: Unknown command
+	at CommandFactory.buildCommand(CommandFactory.java:58)
+	at Calculator.doOperation(Calculator.java:66)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:38:08 TRACE Calculator:59 - command name : exit
+01-06-2020 11:38:08 ERROR CommandFactory:57 - try to do unknown command : 
+java.lang.NullPointerException
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at CommandFactory.buildCommand(CommandFactory.java:51)
+	at Calculator.doOperation(Calculator.java:66)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:38:08 ERROR Calculator:36 - can't do operation : 
+Exceptions.UnknownCommandException: Unknown command
+	at CommandFactory.buildCommand(CommandFactory.java:58)
+	at Calculator.doOperation(Calculator.java:66)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:38:30 TRACE Calculator:59 - command name : exit
+01-06-2020 11:38:30 ERROR CommandFactory:57 - try to do unknown command : 
+java.lang.NullPointerException
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at CommandFactory.buildCommand(CommandFactory.java:51)
+	at Calculator.doOperation(Calculator.java:66)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:38:30 ERROR Calculator:36 - can't do operation : 
+Exceptions.UnknownCommandException: Unknown command
+	at CommandFactory.buildCommand(CommandFactory.java:58)
+	at Calculator.doOperation(Calculator.java:66)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:38:31 TRACE Calculator:59 - command name : 
+01-06-2020 11:38:31 ERROR CommandFactory:57 - try to do unknown command : 
+java.lang.NullPointerException
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at CommandFactory.buildCommand(CommandFactory.java:51)
+	at Calculator.doOperation(Calculator.java:66)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:38:31 ERROR Calculator:36 - can't do operation : 
+Exceptions.UnknownCommandException: Unknown command
+	at CommandFactory.buildCommand(CommandFactory.java:58)
+	at Calculator.doOperation(Calculator.java:66)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:38:33 TRACE Calculator:59 - command name : exit
+01-06-2020 11:38:33 ERROR CommandFactory:57 - try to do unknown command : 
+java.lang.NullPointerException
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:264)
+	at CommandFactory.buildCommand(CommandFactory.java:51)
+	at Calculator.doOperation(Calculator.java:66)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)
+01-06-2020 11:38:33 ERROR Calculator:36 - can't do operation : 
+Exceptions.UnknownCommandException: Unknown command
+	at CommandFactory.buildCommand(CommandFactory.java:58)
+	at Calculator.doOperation(Calculator.java:66)
+	at Calculator.startCalculate(Calculator.java:32)
+	at CalculatorProject.main(CalculatorProject.java:36)

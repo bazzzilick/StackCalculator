@@ -58,7 +58,7 @@ public class Calculator
         }*/
         LOGGER.trace("command name : " + commandName);
 
-        if (commandName.equals("EXIT"))
+        if (commandName.equals("exit"))
         {
             System.exit(0);
         }
